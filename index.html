@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/30aa041a69.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/images/logo.png" class="logo" />
+          <div class="sidemenu">
+            <ul id="sidemenu">
+              <li><a href="#header">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+              <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+          </div>
+          <i class="fas fa fa-ellipsis-vertical" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Intern Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Kavinsha Chamod</span> <br />
+            From Sri Lanka
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------------ABOUT-------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am an individual currently pursuing a BSc honors in Computing at
+              Coventry University in UK. My personality can be described as
+              determined, examining, and dedicated. I develop on challenges and
+              enjoy problem-solving, especially in the field of technology. I am
+              constantly seeking opportunities to expand my knowledge and
+              skills, staying up-to-date with the latest developments in the
+              computing industry. With a passion for learning and a strong work
+              ethic, I approach tasks with a accurate and detail-oriented
+              mindset. I am also a team player, always willing to collaborate
+              and contribute effectively to achieve shared goals. Overall, I am
+              a motivated and driven undergraduate with a genuine feeling for
+              computing and a desire to make a positive impact in the field.
+            </p>
+
+            <div class="tb-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                SKILLS
+              </p>
+              <p class="tab-links" onclick="openTab('certificates')">
+                CERTIFICATES
+              </p>
+              <p class="tab-links" onclick="openTab('education')">EDUCATION</p>
+            </div>
+
+            <div id="skills" class="tab-contents active-tab">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />Designing Web/Mobile App Interfaces
+                </li>
+                <li>
+                  <span>Web Developer</span><br />Creating responsive web pages
+                </li>
+                <li>
+                  <span>Mobile App Developer</span><br />Designing Kotlin
+                  Applications
+                </li>
+              </ul>
+            </div>
+
+            <div id="certificates" class="tab-contents">
+              <ul>
+                <li><span>2023</span><br />Front-End Web Development (UoM)</li>
+                <li><span>2023</span><br />Web Design for Beginners (UoM)</li>
+                <li><span>2022</span><br />Computer Science (NIBM)</li>
+              </ul>
+            </div>
+
+            <div id="education" class="tab-contents">
+              <ul>
+                <li><span>2024 - Present</span><br />Bsc(Hons) in Computing</li>
+                <li>
+                  <span>2022 - 2023</span><br />Higher National Diploma in
+                  Software Engineering
+                </li>
+                <li>
+                  <span>2021 - 2022</span><br />Diploma in Software Engineering
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I excel in dynamic web app development using React, a potent
+              JavaScript library. Specializing in ERP systems, I optimize
+              business processes for efficiency. JavaScript, the linchpin of my
+              projects, enables creation of interactive and feature-rich
+              applications. My commitment to staying updated ensures I deliver
+              innovative solutions aligned with the ever-evolving web
+              development landscape.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Proficient in UI/UX design, I master Figma and Adobe XD to create
+              visually appealing and user-friendly interfaces. With a keen eye
+              for aesthetics and functionality, I craft designs that elevate
+              user experiences. My expertise ensures seamless collaboration and
+              the delivery of captivating designs that resonate with modern
+              design trends.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i
+            ><span style="margin-right: 15px"></span>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>App Design</h2>
+            <p>
+              Skilled in mobile app development, I specialize in Kotlin for
+              Android, delivering robust and user-centric applications. My
+              proficiency extends from crafting intuitive user interfaces to
+              implementing efficient backend functionality. Committed to
+              creating seamless mobile experiences, I leverage Kotlin's power to
+              ensure high-quality, performance-driven Android applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------portfolio-------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/images/work-1.png" />
+            <div class="layer">
+              <h3>Pizza Harbor (Web Application)</h3>
+              <p>
+                Users can register themselves, select pizzas, add to cart and
+                buy pizzas by doing the payment. A separate Admin panel to Add
+                pizza and manage orders.(MERN and Redux)
+              </p>
+              <a href="https://github.com/Kavinsha-Chamod/Pizza-Harbor"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/images/work-2.png" />
+            <div class="layer">
+              <h3>Licenext (Mobile Application)</h3>
+              <p>
+                Converting the physical driving license into a digital version
+                that can be accessed through a mobile application by Traffic
+                Police.
+              </p>
+              <a href="https://github.com/Kavinsha-Chamod/Licenext"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/images/work-3.png" />
+            <div class="layer">
+              <h3>ERP System</h3>
+              <p>
+                ERP system built using PHP and MySQL to manage customer and item
+                data. The system allows users to insert, update, delete, and
+                search for customer and item records. Additionally, it provides
+                three types of reports that are Invoice Report, Invoice Item
+                Report, and Item Report.
+              </p>
+              <a href="https://github.com/Kavinsha-Chamod/ERP-System"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See more...</a>
+      </div>
+    </div>
+
+    <!---------------CONTACT------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i> kavinshachamod11@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +94 767269720</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/kavinsha.chamod.7?mibextid=LQQJ4d"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/.mr.z./?igsh=MTgxNXg5MzM5NXhnag%3D%3D&utm_source=qr"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="http://linkedin.com/in/kavinshachamod"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Kavinsha-Chamod"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1G98MAUkewUd0oT9Smt3EdKhJVSnEMNFc/view?usp=sharing"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2024 Kavinsha Designs. All rights reserved. | Privacy Policy | Terms
+          of Service
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function openTab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sideMenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxz8Im534Z9voZcIY8WGXX9_FuSamqUpnn5EZF9xKIRVLP83e2QRoc93T3c9c72gD03NQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.result == "success") {
+              msg.innerHTML = "Message sent Successfully!";
+              form.reset();
+            } else {
+              msg.innerHTML = "Error submitting the form. Please try again.";
+            }
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
