@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavinsha Chamod Portfolio</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <script
       src="https://kit.fontawesome.com/30aa041a69.js"
       crossorigin="anonymous"
@@ -19,13 +20,13 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/images/logo.png" class="logo" />
+          <img src="assets/logo.png" class="logo" />
           <div class="sidemenu">
             <ul id="sidemenu">
-              <li><a href="#header">HOME</a></li>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#services">SERVICES</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#exprience">EXPERIENCE</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
               <li><a href="#contact">CONTACT</a></li>
               <i class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
@@ -46,69 +47,47 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/images/user.png" />
+            <img src="assets/user.png" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
-              I am an individual currently pursuing a BSc honors in Computing at
-              Coventry University in UK. My personality can be described as
-              determined, examining, and dedicated. I develop on challenges and
-              enjoy problem-solving, especially in the field of technology. I am
-              constantly seeking opportunities to expand my knowledge and
-              skills, staying up-to-date with the latest developments in the
-              computing industry. With a passion for learning and a strong work
-              ethic, I approach tasks with a accurate and detail-oriented
-              mindset. I am also a team player, always willing to collaborate
-              and contribute effectively to achieve shared goals. Overall, I am
-              a motivated and driven undergraduate with a genuine feeling for
-              computing and a desire to make a positive impact in the field.
-            </p>
-
-            <div class="tb-titles">
-              <p class="tab-links active-link" onclick="openTab('skills')">
-                SKILLS
-              </p>
-              <p class="tab-links" onclick="openTab('certificates')">
-                CERTIFICATES
-              </p>
-              <p class="tab-links" onclick="openTab('education')">EDUCATION</p>
-            </div>
-
-            <div id="skills" class="tab-contents active-tab">
-              <ul>
-                <li>
-                  <span>UI/UX</span><br />Designing Web/Mobile App Interfaces
-                </li>
-                <li>
-                  <span>Web Developer</span><br />Creating responsive web pages
-                </li>
-                <li>
-                  <span>Mobile App Developer</span><br />Designing Kotlin
-                  Applications
-                </li>
-              </ul>
-            </div>
-
-            <div id="certificates" class="tab-contents">
-              <ul>
-                <li><span>2023</span><br />Front-End Web Development (UoM)</li>
-                <li><span>2023</span><br />Web Design for Beginners (UoM)</li>
-                <li><span>2022</span><br />Computer Science (NIBM)</li>
-              </ul>
-            </div>
-
-            <div id="education" class="tab-contents">
-              <ul>
-                <li><span>2024 - Present</span><br />Bsc(Hons) in Computing</li>
-                <li>
-                  <span>2022 - 2023</span><br />Higher National Diploma in
-                  Software Engineering
-                </li>
-                <li>
-                  <span>2021 - 2022</span><br />Diploma in Software Engineering
-                </li>
-              </ul>
+            <div class="section-container">
+              <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <h3>CERTIFICATES</h3>
+                    <br />
+                    <p>Computer Science (NIBM)</p>
+                    <p>Web Design for Beginners (UoM)</p>
+                    <p>Front-End Web Development (UoM)</p>
+                  </div>
+                  <div class="details-container">
+                    <h3>EDUCATION</h3>
+                    <br />
+                    <p>Bsc(Hons) in Computing</p>
+                    <p>Higher National Diploma in SE</p>
+                    <p>Diploma in Software Engineering</p>
+                  </div>
+                </div>
+                <div class="text-container">
+                  <p>
+                    I am an individual currently pursuing a BSc honors in
+                    Computing at Coventry University in UK. My personality can
+                    be described as determined, examining, and dedicated. I
+                    develop on challenges and enjoy problem-solving, especially
+                    in the field of technology. I am constantly seeking
+                    opportunities to expand my knowledge and skills, staying
+                    up-to-date with the latest developments in the computing
+                    industry. With a passion for learning and a strong work
+                    ethic, I approach tasks with a accurate and detail-oriented
+                    mindset. I am also a team player, always willing to
+                    collaborate and contribute effectively to achieve shared
+                    goals. Overall, I am a motivated and driven undergraduate
+                    with a genuine feeling for computing and a desire to make a
+                    positive impact in the field.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,57 +140,208 @@
         </div>
       </div>
     </div>
-    <!------------portfolio-------------->
-    <div id="portfolio">
+    <!-----------------EXPERIENCE------------------->
+    <div id="exprience">
+      <div class="container">
+        
+        <h1 class="sub-title">My Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">FRONT-END DEVELOPMENT</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JAVA</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Material UI</h3>
+                    <p>Basics</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">BACK-END DEVELOPMENT</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MongoDB</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Express JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    </div>
+    <!------------projects-------------->
+    <div id="projects">
       <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="project-list">
-          <div class="project">
-            <img src="images/images/work-1.png" />
-            <div class="layer">
-              <h3>Pizza Harbor (Web Application)</h3>
-              <p>
-                Users can register themselves, select pizzas, add to cart and
-                buy pizzas by doing the payment. A separate Admin panel to Add
-                pizza and manage orders.(MERN and Redux)
-              </p>
-              <a href="https://github.com/Kavinsha-Chamod/Pizza-Harbor"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container-p color-container">
+            <div class="article-container">
+              <img
+                src="./assets/work-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="title project-title"> Pizza Harbor<br/> </h2> <h4>Web Application</h4>
+           
+            <div class="btn-container">
+              <button
+                class="btn-p btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kavinsha-Chamod/Pizza-Harbor'"
+              >
+                Github
+              </button>
+              
             </div>
           </div>
-          <div class="project">
-            <img src="images/images/work-2.png" />
-            <div class="layer">
-              <h3>Licenext (Mobile Application)</h3>
-              <p>
-                Converting the physical driving license into a digital version
-                that can be accessed through a mobile application by Traffic
-                Police.
-              </p>
-              <a href="https://github.com/Kavinsha-Chamod/Licenext"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+          <div class="details-container-p color-container">
+            <div class="article-container">
+              <img
+                src="./assets/work-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="title project-title">Licenext</h2> <h4>Mobile Application</h4>
+
+            <div class="btn-container">
+              <button
+                class="btn-p btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kavinsha-Chamod/Licenext'"
+              >
+                Github
+              </button>
+              
             </div>
           </div>
-          <div class="project">
-            <img src="images/images/work-3.png" />
-            <div class="layer">
-              <h3>ERP System</h3>
-              <p>
-                ERP system built using PHP and MySQL to manage customer and item
-                data. The system allows users to insert, update, delete, and
-                search for customer and item records. Additionally, it provides
-                three types of reports that are Invoice Report, Invoice Item
-                Report, and Item Report.
-              </p>
-              <a href="https://github.com/Kavinsha-Chamod/ERP-System"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+          <div class="details-container-p color-container">
+            <div class="article-container">
+              <img
+                src="./assets/work-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="title project-title">CashMate</h2> <h4>Web Application</h4>
+            <div class="btn-container">
+              <button
+                class="btn-p btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kavinsha-Chamod/CashMate'"
+              >
+                Github
+              </button>
             </div>
           </div>
         </div>
-        <a href="" class="btn">See more...</a>
+      </div>
+          </div>
+        </div>
+        <a href="https://github.com/Kavinsha-Chamod?tab=repositories" class="btn">See more...</a>
       </div>
     </div>
 
@@ -242,7 +372,7 @@
               ></a>
             </div>
             <a
-              href="https://drive.google.com/file/d/1G98MAUkewUd0oT9Smt3EdKhJVSnEMNFc/view?usp=sharing"
+              href="assets/B.A.K.C.Gangara.pdf"
               download
               class="btn btn2"
               >Download CV</a
